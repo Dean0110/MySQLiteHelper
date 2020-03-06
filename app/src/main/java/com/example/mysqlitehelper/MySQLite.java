@@ -13,7 +13,8 @@ public class MySQLite extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table i_user(name varchar(20),email varchar(20),phone varchar(20))");
+        String sql="create table user(name varchar(20),email varchar(20),phone varchar(20))";
+        db.execSQL(sql);
     }
 
     @Override

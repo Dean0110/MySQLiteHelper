@@ -138,6 +138,18 @@
         android:textSize="20sp"
         android:textColor="@android:color/white" />
     </LinearLayout>
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/edt_phone"
+        android:layout_above="@+id/layout_button"
+        android:gravity="center_horizontal"
+        android:text="-no records-"
+        android:textSize="17sp"
+        android:textColor="@color/colorAccent"
+        />
 
 
 </RelativeLayout>
