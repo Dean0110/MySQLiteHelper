@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="  SQLite"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_top"
+        android:text="NAME:"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_top"
+
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_name"
+        android:text="EMAIL:"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_name"
+
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_email"
+        android:text="MOBILE NUMBERS:"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <EditText
+        android:id="@+id/edt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_email"
+
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_phone"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="-no records-"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        />
+    <Button
+        android:id="@+id/btn_write"
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_show"
+        android:layout_marginLeft="20dp"
+
+        android:text="WRITE"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:onClick="BTNWrite"
+        />
+    <Button
+        android:id="@+id/btn_read"
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_show"
+        android:layout_marginLeft="110dp"
+
+        android:text="READ"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:onClick="BTNRead"
+        />
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_show"
+        android:layout_marginLeft="200dp"
+
+        android:text="UPDATE"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:onClick="BTNUpdate"
+        />
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_show"
+        android:layout_marginLeft="290dp"
+
+        android:text="REMOVE"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:onClick="BTNRemove"
+        />
+
+
+</RelativeLayout>
